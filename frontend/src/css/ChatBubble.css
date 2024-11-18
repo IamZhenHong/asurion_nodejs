@@ -1,0 +1,41 @@
+/* Container for each bubble to position it correctly */
+.chat-bubble-container {
+    display: flex;
+    margin: 8px 0;
+  }
+  
+  /* Assistant's response aligned to the left */
+  .chat-bubble-container.assistant {
+    justify-content: flex-start;
+  }
+  
+  /* User's message aligned to the right */
+  .chat-bubble-container.user {
+    justify-content: flex-end;
+  }
+  
+  /* Common chat bubble styles */
+  .chat-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Assistant bubble styling */
+  .chat-bubble.assistant {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 15px 15px 15px 0;
+  }
+  
+  /* User bubble styling */
+  .chat-bubble.user {
+    background-color: #0078d4;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+  }
+  
